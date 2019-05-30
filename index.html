@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<header class="navbar-inverse" role="banner">
+		<div class="container">
+			<nav role="navigation">
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      				<ul class="nav navbar-nav upperCase">
+				        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+    			</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="bgContainer">
+			<img class="bgImg" src="images/background.png">
+		</div>
+		<br><br>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h1 class="upperCase">Entries:</h1>
+					<br><br>
+					<p>
+						<input class="inputText"  id="num-one" type="number">
+						<input class= "inputText" id="num-two" type="number">
+					</p>
+					<br>
+					<p id="result"></p>
+				</div>
+				<div class="col-sm-6">
+					<h1 class="upperCase">Operation:</h1>
+					<br><br>
+					<button type="button" class="btn btn-danger btn-lg" onclick="add()">Add</button>
+					<button type="button" class="btn btn-danger btn-lg" onclick="subtract()">Subtract</button>
+					<button type="button" class="btn btn-danger btn-lg" onclick="multiply()">Multiply</button>
+					<button type="button" class="btn btn-danger btn-lg" onclick="division()">Divison</button>
+					<p id="warning"></p>
+				</div>
+			</div>
+		</div>	
+	</main>
+
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
